@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/bitmapDrawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:text="BitmapDrawable" />
+
+    <Button
+        android:id="@+id/ShapeDrawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ff0000"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:text="ShapeDrawable" />
+
+    <Button
+        android:id="@+id/layer_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ff0000"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:text="LayerDrawable" />
+
+    <Button
+        android:id="@+id/statelist_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:background="#ff0000"
+        android:text="StateListDrawable" />
+
+    <Button
+        android:id="@+id/levelList_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ff0000"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:text="LevelListDrawable" />
+
+    <Button
+        android:id="@+id/transition_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:background="#ff0000"
+        android:text="TransitionDrawable" />
+
+    <Button
+        android:id="@+id/inset_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:background="#ff0000"
+        android:text="InsetDrawable" />
+
+    <Button
+        android:id="@+id/scale_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#ff0000"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:text="ScaleDrawable" />
+
+    <Button
+        android:id="@+id/clip_drawable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:textAllCaps="false"
+        android:background="#ff0000"
+        android:text="ClipDrawable" />
+
+</LinearLayout>
