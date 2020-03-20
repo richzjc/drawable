@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <transition xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:drawable="@drawable/bmp_img" />
 
+    <item android:drawable="@drawable/ic_launcher" />
 </transition>

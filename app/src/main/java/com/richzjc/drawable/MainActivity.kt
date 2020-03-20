@@ -1,10 +1,16 @@
 package com.richzjc.drawable
 
+import android.graphics.drawable.LevelListDrawable
+import android.graphics.drawable.TransitionDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
+import androidx.core.content.ContextCompat
 
 class MainActivity : AppCompatActivity() {
+
+    private val bg by lazy { findViewById<View>(R.id.bg) }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,30 +53,35 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setInsetDrawable() {
-
+        bg.background = ContextCompat.getDrawable(this, R.drawable.inset_drawable)
     }
 
     private fun setTransitionDrawable() {
-
+        val drawable = ContextCompat.getDrawable(this, R.drawable.transition_drawable) as? TransitionDrawable
+        bg.background = drawable
+        drawable?.startTransition(4000)
     }
 
     private fun setLevelListDrawable() {
-
+       val drawalbe = ContextCompat.getDrawable(this, R.drawable.level_drawalbe) as? LevelListDrawable
+        bg.background = drawalbe
+        drawalbe?.level = 3
     }
 
     private fun setStateListDrawable() {
-
+        bg.background = ContextCompat.getDrawable(this, R.drawable.state_list_drawable)
+        bg.isSelected = !bg.isSelected
     }
 
     private fun setLayerDrawable() {
-
+        bg.background = ContextCompat.getDrawable(this, R.drawable.layer_drawable)
     }
 
     private fun setShapeDrawable() {
-
+        bg.background = ContextCompat.getDrawable(this, R.drawable.shape_drawable)
     }
 
     private fun setBitmapDrawable() {
-
+        bg.background = ContextCompat.getDrawable(this, R.drawable.bitmap_drawable)
     }
 }
